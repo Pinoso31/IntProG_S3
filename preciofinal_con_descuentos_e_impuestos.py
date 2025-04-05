@@ -1,0 +1,11 @@
+precio_inicial = int(input("Ingresa el monto original del producto :"))
+porcentaje = float(input("Ingrese el porcentaje de descuento del producto :"))
+precio_descuento = precio_inicial - ((precio_inicial*porcentaje)/100)
+iva = float(input("Ingresa el porcentaje de IVA : "))
+precio_final = ((precio_descuento*iva)/100)+precio_descuento
+print("-"*60)
+print("El precio original es de : ", precio_inicial)
+print("El descuento aplicado es de : ", (precio_inicial * porcentaje)/100)
+print("El IVA es de : ", (precio_descuento*iva)/100)
+print("El precio final es de : ", precio_final)
+print("-"*60)

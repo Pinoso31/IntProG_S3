@@ -1,8 +1,8 @@
-segundos = int(input("Ingrese una cantidad de segundos"))
-horas = 3600 / segundos
-resto = segundos / 3600
-minutos = 60 / resto
-segundos = resto * 60 
-print("Tiempo obtenido : ",horas, minutos , segundos  )
 
-    
+total_segundos=int(input("Ingrese la cantidad total de segundos: "))
+horas=int(total_segundos/3600)
+minutos=int((total_segundos-(horas*3600))/60)
+segundos_restantes=(total_segundos-(horas*3600))-(minutos*60)
+print("*"*60)
+print(horas, " horas, ", minutos, "minutos, ", segundos_restantes, " segundos")
+print("*"*60)
